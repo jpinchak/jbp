@@ -1,4 +1,4 @@
-import {ChakraButton} from '../../src/Button';
+import {ChakraButton} from '../components/Button';
 
 export default {
   title: 'Julie\'s Components/Button',

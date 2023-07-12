@@ -1,0 +1,49 @@
+import { Meta, Story } from '@storybook/blocks';
+import { Box, Flex } from '@chakra-ui/react';
+import { colors } from '../src/theme.ts';
+
+<Meta title="Colors" />
+
+<Story name="JewelColors">
+
+<Flex>
+
+  <Flex flexDirection={'column'} px={2}>
+    {Object.entries(colors.mints).map(color => (
+      <Flex key={color[0]} py={1}>
+        <Box w={10} h={5} mx={0}>{color[0]}</Box>
+        <Box bg={color[1]} w={12} h={5}></Box>
+      </Flex>
+    ))}
+  </Flex>
+
+  <Flex flexDirection={'column'} px={2}>
+    {Object.entries(colors.blues).map(color => (
+      <Flex key={color[0]} py={1}>
+        <Box w={10} h={5} mx={0}>{color[0]}</Box>
+        <Box bg={color[1]} w={12} h={5}></Box>
+      </Flex>
+    ))}
+  </Flex>
+
+  <Flex flexDirection={'column'} px={2}>
+    {Object.entries(colors.purples).map(color => (
+      <Flex key={color[0]} py={1}>
+        <Box w={10} h={5} mx={0}>{color[0]}</Box>
+        <Box bg={color[1]} w={12} h={5}></Box>
+      </Flex>
+    ))}
+  </Flex>
+
+  <Flex flexDirection={'column'} px={2}>
+    {Object.entries(colors.pinks).map(color => (
+      <Flex key={color[0]} py={1}>
+        <Box w={10} h={5} mx={0}>{color[0]}</Box>
+        <Box bg={color[1]} w={12} h={5}></Box>
+      </Flex>
+    ))}
+  </Flex>
+
+</Flex>
+
+</Story>

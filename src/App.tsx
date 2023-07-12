@@ -1,6 +1,6 @@
 import React from 'react';
 import { Heading, Stack } from '@chakra-ui/react';
-import { ChakraButton } from './Button'
+import { ChakraButton } from './components';
 import './App.css';
 
 function App() {
