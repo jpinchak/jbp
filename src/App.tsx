@@ -1,6 +1,6 @@
 import React from 'react';
-import { Heading, Stack } from '@chakra-ui/react';
-import { ChakraButton } from './components';
+import { Stack } from '@chakra-ui/react';
+import { ChakraButton, ChakraNavBar, Logo } from './components';
 import './App.css';
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
       <Stack direction='column'>
-        <Heading>Hello Julie</Heading>
+        <ChakraNavBar logo={<Logo />} />
         <ChakraButton buttons={buttons} />
       </Stack>
     </div>

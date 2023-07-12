@@ -7,7 +7,7 @@ interface NavbarProps {
 
 const navbarStyles = {
   w: '100%',
-  h: 10,
+  h: 12,
   bg: 'blues.500',
 };
 
